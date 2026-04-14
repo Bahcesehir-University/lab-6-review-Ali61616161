@@ -115,11 +115,12 @@ public:
     // Hint: loop through each character and use toupper()
     string getFormattedName() const {
         // YOUR CODE HERE
+        string temp = name;
         string result = name;
         for (int i = 0 ; i < result.length() ; i++){
             result[i] = toupper(result[i]);
         }
-        return "upper";
+        return result;
     }
 
     // ----- Task 5: Operator Overloading -----

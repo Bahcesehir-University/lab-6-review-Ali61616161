@@ -63,7 +63,7 @@ public:
     // TODO 1d: Destructor
     // Print: "Student [name] destroyed"
     ~Student() {
-        cout << "Student " << name << "destroyed " << endl;
+        cout << "Student " << name << " destroyed " << endl;
         
     }
 
@@ -143,7 +143,7 @@ public:
     // Format: "Student(name, ID: id, GPA: gpa)"
     // Example: "Student(Ali, ID: 101, GPA: 3.5)"
     friend ostream& operator<<(ostream& os, const Student& s){
-        os << "Student("<< s.name << ", ID: "<< s.id << "GPA: "<<s.gpa<<")";
+        os << "Student("<< s.name << ", ID: "<< s.id << " GPA: "<<s.gpa<<")";
         return os;
     }
     
